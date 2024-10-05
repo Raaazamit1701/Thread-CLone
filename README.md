@@ -2,7 +2,7 @@
 
 A thread clone application built using Node.js for the backend and React for the frontend. This project replicates the functionality of a thread-based discussion platform.
 
-**Hosted Link:** [Thread Clone](https://thread-node-project.onrender.com)
+**Hosted Link:** [Thread Clone](https://thread-clone-ujbh.onrender.com/)
 
 ## Table of Contents
 - [Overview](#overview)
