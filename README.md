@@ -1,93 +1,42 @@
-# Thread Clone
 
-A thread clone application built using Node.js for the backend and React for the frontend. This project replicates the functionality of a thread-based discussion platform.
+hosted link https://threadapp-s9t9.onrender.com/
 
-**Hosted Link:** [Thread Clone](https://thread-clone-ujbh.onrender.com/)
+Feature List:
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Project](#running-the-project)
-- [API Endpoints](#api-endpoints)
-- [Frontend](#frontend)
-- [License](#license)
-- [Snapshot](#snapshot)
+-   🌟 Tech stack: MERN + Socket.io + Chakra UI
+-   🎃 Authentication & Authorization with JWT
+-   📝 Create Post
+-   🗑️ Delete Post
+-   ❤️ Like/Unlike Post
+-   💬 Comment to a Post
+-   👥 Follow/Unfollow Users
+-   ❄️ Freeze Your Account
+-   🌓 Dark/Light Mode
+-   📱 Completely Responsive
+-   💬 Chat App With Image Support
+-   👀 Seen/Unseen Status for Messages
+-   🔊 Notification sounds
+-   ⭐ Deployment for FREE
 
-## Overview
+### Setup .env file
 
-This application is designed to mimic a thread-based discussion platform where users can create, view, and participate in threads. The backend is built with Node.js and Express, while the frontend is created using React.
+```js
+PORT=...
+MONGO_URI=...
+JWT_SECRET=...
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
+```
 
-## Features
+### Build the app
 
-- User authentication (login and signup)
-- Creating, viewing, and managing threads
-- Posting and managing messages within threads
-- User profile management
-- Real-time messaging using Socket.io
-- File upload functionality using Cloudinary
+```shell
+npm run build
+```
 
-## Technologies Used
+### Start the app
 
-**Backend:**
-- Node.js
-- Express
-- MongoDB (with Mongoose)
-- Socket.io
-- Cloudinary
-- bcryptjs
-- jsonwebtoken
-- dotenv
-- cors
-- cookie-parser
-
-**Frontend:**
-- React
-- React Router
-- Axios
-- Socket.io-client
-
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2. Start the backend server:
-    ```bash
-    cd backend
-    npm run dev
-    ```
-
-3. Start the frontend server:
-    ```bash
-    cd frontend
-    npm run dev
-    ```
-
-## API Endpoints
-
-**User Authentication:**
-- `POST /api/users/signup` - Sign up a new user
-- `POST /api/users/login` - Log in a user
-
-**Threads:**
-- `GET /api/threads` - Get all threads
-- `POST /api/threads` - Create a new thread
-- `GET /api/threads/:id` - Get a specific thread
-
-**Messages:**
-- `POST /api/messages` - Post a new message
-- `GET /api/messages/:threadId` - Get messages for a specific thread
-
-## Snapshot
-
-![Thread Clone Snapshot](<image-link>)
-
-## License
-
-This project is licensed under the MIT License.
+```shell
+npm start
+```
